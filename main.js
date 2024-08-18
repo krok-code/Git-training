@@ -1,3 +1,17 @@
+// function calculateTotal(number) {
+//   let result = 0;
+//   for (let i = 0; i < number; i += 1) {
+//     result += i;
+//   }
+
+//   return result;
+// }
+
+// console.log(calculateTotal(1));
+// console.log(calculateTotal(3));
+// console.log(calculateTotal(7));
+// console.log(calculateTotal(18));
+// console.log(calculateTotal(24));
 // function filterArray(numbers, value) {
 //   const filteredNumbers = [];
 
