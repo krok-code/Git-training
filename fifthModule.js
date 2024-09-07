@@ -1,35 +1,35 @@
-class User {
-  #email;
+// class User {
+//   #email;
 
-  constructor(email) {
-    this.#email = email;
-  }
+//   constructor(email) {
+//     this.#email = email;
+//   }
 
-  get email() {
-    return this.#email;
-  }
+//   get email() {
+//     return this.#email;
+//   }
 
-  set email(newEmail) {
-    this.#email = newEmail;
-  }
-}
+//   set email(newEmail) {
+//     this.#email = newEmail;
+//   }
+// }
 
-class ContentEditor extends User {
-  constructor({ email, posts }) {
-    super(email);
-    this.posts = posts;
-  }
+// class ContentEditor extends User {
+//   constructor({ email, posts }) {
+//     super(email);
+//     this.posts = posts;
+//   }
 
-  addPost(post) {
-    this.posts.push(post);
-  }
-}
+//   addPost(post) {
+//     this.posts.push(post);
+//   }
+// }
 
-const editor = new ContentEditor({ email: "mango@gmail.com", posts: [] });
-console.log(editor);
-console.log(editor.email);
-editor.addPost("post-1");
-console.log(editor.posts);
+// const editor = new ContentEditor({ email: "mango@gmail.com", posts: [] });
+// console.log(editor);
+// console.log(editor.email);
+// editor.addPost("post-1");
+// console.log(editor.posts);
 
 // class User {
 //   #email;
