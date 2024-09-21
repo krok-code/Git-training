@@ -14,10 +14,42 @@
     <script src="fifthModule.js"></script>
   </head>
   <body>
-    <button type="button" data-action="set">Set focus to input</button>
+    <p class="cta">Scroll me</p>
+
+    <div class="event-counter">
+      <div class="box">
+        <p>No timing function</p>
+        <span class="output vanilla">0</span>
+      </div>
+
+      <div class="box">
+        <p>Throttled</p>
+        <span class="output throttled">0</span>
+      </div>
+
+      <div class="box">
+        <p>Trailing debounce</p>
+        <span class="output trailing">0</span>
+      </div>
+
+      <div class="box">
+        <p>Leading debounce</p>
+        <span class="output leading">0</span>
+      </div>
+    </div>
+    <!-- <p class="output">Selected color: -</p>
+    <div class="color-palette"></div> -->
+    <!-- <div id="parent">
+      Parent
+      <div id="child">
+        Child
+        <div id="descendant">Descendant</div>
+      </div>
+    </div> -->
+    <!-- <button type="button" data-action="set">Set focus to input</button>
     <button type="button" data-action="remove">Remove focus from input</button>
     <br /><br />
-    <input type="text" class="text-input" />
+    <input type="text" class="text-input" /> -->
     <!-- <input type="text" class="text-input" />
     <p>Text field value: <span class="output"></span></p> -->
     <!-- <p>Selected option next: <span class="text-output">none</span></p>
