@@ -1,0 +1,16 @@
+{
+  "name": "git-training",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "node-tut index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Maksym Smolinskyi <maks.smolinskyi@gmail.com>",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "validator": "^13.12.0"
+  }
+}
