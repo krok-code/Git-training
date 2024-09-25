@@ -1,22 +1,22 @@
-const textInput = document.querySelector(".text-input");
-const setFocusBtn = document.querySelector('[data-action="set"]');
-const removeFocusBtn = document.querySelector('[data-action="remove"]');
+// const textInput = document.querySelector(".text-input");
+// const setFocusBtn = document.querySelector('[data-action="set"]');
+// const removeFocusBtn = document.querySelector('[data-action="remove"]');
 
-setFocusBtn.addEventListener("click", () => {
-  textInput.focus();
-});
+// setFocusBtn.addEventListener("click", () => {
+//   textInput.focus();
+// });
 
-removeFocusBtn.addEventListener("click", () => {
-  textInput.blur();
-});
+// removeFocusBtn.addEventListener("click", () => {
+//   textInput.blur();
+// });
 
-textInput.addEventListener("focus", () => {
-  textInput.value = "This input has focus";
-});
+// textInput.addEventListener("focus", () => {
+//   textInput.value = "This input has focus";
+// });
 
-textInput.addEventListener("blur", () => {
-  textInput.value = "";
-});
+// textInput.addEventListener("blur", () => {
+//   textInput.value = "";
+// });
 
 // const textInput = document.querySelector(".text-input");
 // const output = document.querySelector(".output");
