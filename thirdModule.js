@@ -1,8 +1,8 @@
-const rgb = [200, 255, 100];
+// const rgb = [200, 255, 100];
 
-const [, , blue] = rgb;
+// const [, , blue] = rgb;
 
-console.log(`Blue: ${blue}`);
+// console.log(`Blue: ${blue}`);
 
 // const [red, ...colors] = rgb;
 

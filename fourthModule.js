@@ -1,3 +1,249 @@
+const students = [
+  { name: "Mango", score: 83 },
+  { name: "Polly", score: 59 },
+  { name: "Ajax", score: 37 },
+  { name: "Kivi", score: 94 },
+];
+
+const names = [...students].sort((a, b) => a.score - b.score).map((student) => student.name);
+
+console.log(names);
+
+// const sortedByAscendingScore = [...students].sort((a, b) => a.score - b.score);
+// const names = sortedByAscendingScore.map((student) => student.name);
+// console.log(names);
+
+// const inAscendingScoreOrder = [...students].sort(
+//   (firstStudent, secondStudent) => firstStudent.score - secondStudent.score
+// );
+// console.log(inAscendingScoreOrder);
+
+// const inDescendingScoreOrder = [...students].sort(
+//   (firstStudent, secondStudent) => secondStudent.score - firstStudent.score
+// );
+// console.log(inDescendingScoreOrder);
+
+// const inAlphabetOrder = [...students].sort((firstStudent, secondStudent) =>
+//   firstStudent.name.localeCompare(secondStudent.name)
+// );
+// console.log(inAlphabetOrder);
+
+// const notInAlphabetOrder = [...students].sort((firstStudent, secondStudent) =>
+//   secondStudent.name.localeCompare(firstStudent.name)
+// );
+// console.log(notInAlphabetOrder);
+
+// const scores = [27, 2, 41, 4, 7, 3, 75];
+// const ascendingScores = [...scores].sort((a, b) => a - b);
+// const descendingScores = [...scores].sort((a, b) => b - a);
+// console.log(ascendingScores);
+// console.log(descendingScores);
+// console.log(scores);
+
+// const scores = [61, 19, 74, 35, 92, 56];
+// scores.sort();
+// console.log(scores);
+
+// const scoress = [27, 2, 41, 4, 7, 3, 75];
+// scoress.sort();
+// console.log(scoress);
+
+// const tweets = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
+
+// const getTags = (tweets) =>
+//   tweets.reduce((allTags, tweet) => {
+//     allTags.push(...tweet.tags);
+
+//     return allTags;
+//   }, []);
+
+// const tags = getTags(tweets);
+
+// console.log(getTags(tweets));
+
+// const getTagStats = (acc, tag) => {
+//   if (!acc.hasOwnProperty(tag)) {
+//     acc[tag] = 0;
+//   }
+
+//   acc[tag] += 1;
+
+//   return acc;
+// };
+
+// const countTags = (tags) => tags.reduce(getTagStats, {});
+
+// const tagCount = countTags(tags);
+// console.log(tagCount);
+
+// const tags = getTags(tweets);
+// console.log(tags);
+// const tweets1 = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+// ];
+
+// const tweets2 = [
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+// ];
+
+// const tweets3 = [
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+//   { id: "005", likes: 12, tags: ["html", "js"] },
+// ];
+
+// const getTags = (tweets) =>
+//   tweets.reduce((totalTags, tweet) => {
+//     totalTags.push(...tweet.tags);
+//     return totalTags;
+//   }, []);
+
+// const totalTags1 = getTags(tweets1);
+// const totalTags2 = getTags(tweets2);
+// const totalTags3 = getTags(tweets3);
+
+// console.log(totalTags1);
+// console.log(totalTags2);
+// console.log(totalTags3);
+
+// const countLikes = (tweets) => {
+//   return tweets.reduce((totalLikes, tweet) => totalLikes + tweet.likes, 0);
+// };
+
+// const totalLikes1 = countLikes(tweets1);
+// const totalLikes2 = countLikes(tweets2);
+// const totalLikes3 = countLikes(tweets3);
+
+// console.log(totalLikes1);
+// console.log(totalLikes2);
+// console.log(totalLikes3);
+
+// const totalAllLikes = (likes) => {
+//   return likes.reduce((previusLikes, like) => previusLikes + like, 0);
+// };
+
+// const allTweets = [totalLikes1, totalLikes2, totalLikes3];
+// const totalLikesAll = totalAllLikes(allTweets);
+
+// console.log(totalLikesAll);
+// const tweets = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
+
+// const likes = tweets.reduce((totalLikes, tweet) => {
+//   return totalLikes + tweet.likes;
+// }, 0);
+// console.log(likes);
+
+// const students = [
+//   { name: "Манго", score: 83 },
+//   { name: "Полі", score: 59 },
+//   { name: "Аякс", score: 37 },
+//   { name: "Ківі", score: 94 },
+//   { name: "Х'юстон", score: 64 },
+// ];
+
+// const totalScore = students.reduce((total, student) => {
+//   return total + student.score;
+// }, 0);
+// console.log(totalScore);
+
+// const averageScore = totalScore / students.length;
+// console.log(averageScore);
+
+// const total = [2, 7, 3, 14, 6].reduce((previousValue, number) => {
+//   return previousValue + number;
+// }, 0);
+
+// console.log(total);
+
+// const fruits = [
+//   { name: "apples", amount: 100 },
+//   { name: "bananas", amount: 0 },
+//   { name: "grapes", amount: 50 },
+// ];
+
+// const notAllAvailable = fruits.every((fruit) => fruit.amount > 0);
+// console.log(notAllAvailable);
+
+// const allAvailable = fruits.every((fruit) => fruit.amount >= 0);
+// console.log(allAvailable);
+
+// const anyAvailable = fruits.some((fruit) => fruit.amount > 0);
+// console.log(anyAvailable);
+
+// const array = [1, 2, 3, 4, 5];
+// const secondArray = [0, -1, -2, -3, -4];
+
+// const methodEveryTrue = array.every((value) => value < 6);
+// console.log(methodEveryTrue);
+// const methodEveryFalse = array.every((value) => value < 5);
+// console.log(methodEveryFalse);
+
+// const methodSomeTrue = array.some((value) => value < 5);
+// console.log(methodSomeTrue);
+// const methodSomeTruet = secondArray.some((value) => value >= 0);
+// console.log(methodSomeTruet);
+
+// const colorPickerOptions = [
+//   { label: "red", color: "#F44336" },
+//   { label: "green", color: "#4CAF50" },
+//   { label: "blue", color: "#2196F3" },
+//   { label: "pink", color: "#E91E63" },
+//   { label: "indigo", color: "#3F51B5" },
+// ];
+
+// const blue = colorPickerOptions.findIndex((option) => option.label === "blue");
+// console.log(blue);
+
+// const pink = colorPickerOptions.find((option) => option.label === "pink");
+// console.log(pink);
+
+// const white = colorPickerOptions.findIndex((option) => option.label === "white");
+// console.log(white);
+// const LOW_SCORE = 50;
+// const HIGH_SCORE = 80;
+// const students = [
+//   { name: "Манго", score: 83 },
+//   { name: "Аякс", score: 37 },
+//   { name: "Ківі", score: 94 },
+//   { name: "Х'юстон", score: 64 },
+//   { name: "Полі", score: 59 },
+// ];
+
+// const best = students.filter((student) => student.score >= HIGH_SCORE);
+// console.log(best);
+
+// const worst = students.filter((student) => student.score < LOW_SCORE);
+// console.log(worst);
+
+// const average = students.filter(({ score }) => score >= LOW_SCORE && score < HIGH_SCORE);
+// console.log(average);
+
+// const values = [51, -3, 27, 21, -68, 42, -37];
+
+// const positiveValues = values.filter((value) => value >= 0);
+// console.log(positiveValues);
+
+// const negativeValues = values.filter((value) => value <= 0);
+// console.log(negativeValues);
+
+// const bigValues = values.filter((value) => value >= 1000);
+// console.log(bigValues);
+
+// console.log(values);
+
 // const pizzaPalace = {
 //   pizzas: ["Ultracheese", "Smoked", "Four meats"],
 //   order(pizzaName, onSuccess, onError) {
