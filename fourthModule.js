@@ -1,13 +1,13 @@
-const students = [
-  { name: "Mango", score: 83 },
-  { name: "Polly", score: 59 },
-  { name: "Ajax", score: 37 },
-  { name: "Kivi", score: 94 },
-];
+// const students = [
+//   { name: "Mango", score: 83 },
+//   { name: "Polly", score: 59 },
+//   { name: "Ajax", score: 37 },
+//   { name: "Kivi", score: 94 },
+// ];
 
-const names = [...students].sort((a, b) => a.score - b.score).map((student) => student.name);
+// const names = [...students].sort((a, b) => a.score - b.score).map((student) => student.name);
 
-console.log(names);
+// console.log(names);
 
 // const sortedByAscendingScore = [...students].sort((a, b) => a.score - b.score);
 // const names = sortedByAscendingScore.map((student) => student.name);

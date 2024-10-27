@@ -1,3 +1,280 @@
+function checkStorage(available, ordered) {
+  if (ordered === 0) {
+    return "Your order is empty!";
+  } else if (ordered > available) {
+    return "Your order is too large, not enough goods in stock!";
+  }
+  return "The order is accepted, our manager will contact you";
+}
+console.log(checkStorage(100, 50));
+// function getShippingCost(country) {
+//   let message;
+//   // Change code below this line
+
+//   switch (country) {
+//     case "China":
+//       price = 150;
+//       break;
+
+//     case "Chile":
+//       price = 250;
+//       break;
+
+//     case "Australia":
+//       price = 170;
+//       break;
+
+//     case "Jamaica":
+//       price = 120;
+//       break;
+
+//     default:
+//       return "Sorry, there is no delivery to your country";
+//   }
+
+//   message = `Shipping to ${country} will cost ${price} credits`;
+//   // Change code above this line
+//   return message;
+// }
+
+// function getShippingCost(country) {
+//   let message;
+//   // Change code below this line
+
+//   switch (country) {
+//     case "China":
+//       price = 150;
+//       break;
+
+//     case "Chile":
+//       price = 250;
+//       break;
+
+//     case "Australia":
+//       price = 170;
+//       break;
+
+//     case "Jamaica":
+//       price = 120;
+//       break;
+
+//     default:
+//       message = "Sorry, there is no delivery to your country";
+
+//       message = `Shipping to ${country} will cost ${price} credits`;
+//   }
+//   // Change code above this line
+//   return message;
+// }
+
+// getShippingCost("Australia");
+
+// class User {
+//   #email;
+
+//   constructor({ name, email }) {
+//     this.name = name;
+//     this.#email = email;
+//   }
+
+//   get email() {
+//     return this.#email;
+//   }
+
+//   set email(newEmail) {
+//     if (newEmail === "") {
+//       console.error("Помилка! Пошта не може бути порожнім рядком!");
+//       return;
+//     }
+//     this.#email = newEmail;
+//   }
+// }
+
+// const mango = new User({
+//   name: "Mango",
+//   email: "mango@gmail.com",
+// });
+// console.log(mango.email);
+// mango.email = "";
+// console.log(mango.email);
+
+// const mango = new User({
+//   name: "Mango",
+//   email: "mango@gmail.com",
+// });
+
+// console.log(mango.getEmail);
+// mango.changeEmail("mango@supermail.com");
+// console.log(mango.getEmail);
+// console.log(mango.#email);
+
+// class User {
+//   constructor(name, email) {
+//     this.name = name;
+//     this.email = email;
+//   }
+//   getEmail() {
+//     return this.email;
+//   }
+
+//   changeEmail(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+
+// const mango = new User("Mango", "mango@gmail.com");
+// console.log(mango);
+
+// const poly = new User("Poly", "poly@gmail.com");
+// console.log(poly);
+
+// class User {}
+
+// const mango = new User();
+// console.log(mango);
+
+// const poly = new User();
+// console.log(poly);
+
+// const animal = {
+//   eats: true,
+// };
+// const dog = Object.create(animal);
+// dog.barks = true;
+
+// const dogKeys = Object.keys(dog);
+
+// console.log(dogKeys);
+
+// const animal = {
+//   eats: true,
+// };
+// const dog = Object.create(animal);
+// dog.darks = true;
+
+// for (const key in dog) {
+//   if (dog.hasOwnProperty(key)) continue;
+
+//   console.log(key);
+// }
+
+// const animal = { eats: true };
+// const dog = Object.create(animal);
+// dog.darks = true;
+
+// for (const key in dog) {
+//   console.log(key);
+// }
+
+// const animal = {
+//   legs: 4,
+// };
+// const dog = Object.create(animal);
+// dog.name = "Mango";
+
+// console.log(dog);
+// console.log(animal.isPrototypeOf(dog));
+
+// console.log(dog.hasOwnProperty("name"));
+// console.log(dog.name);
+
+// console.log(dog.hasOwnProperty("legs"));
+// console.log(dog.legs);
+
+// const employee = {
+//   baseSalary: 3000,
+//   overtime: 10,
+//   rate: 20,
+//   getwage() {
+//     return this.baseSalary + this.overtime * this.rate;
+//   },
+// };
+
+// console.log(employee.getwage());
+
+// class Car {
+//   constructor(brand, model, year) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.year = year;
+//   }
+
+//   startEngine() {
+//     console.log(`${this.brand} ${this.model} engine started.`);
+//   }
+
+//   stopEngine() {
+//     console.log(`${this.brand} ${this.model} engine stopped.`);
+//   }
+// }
+
+// const myCar = new Car("Toyota", "Corolla", 2020);
+
+// myCar.startEngine();
+// myCar.stopEngine();
+
+// const customer = {
+//   firstName: "Jacob",
+//   lastName: "Mercer",
+//   getFullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   },
+// };
+
+// function makeMessage(callback) {
+//   console.log(`Обробляємо заявку від ${callback()}.`);
+// }
+
+// makeMessage(customer.getFullName);
+// makeMessage(customer.getFullName.bind(customer));
+// function greet(clientName) {
+//   return `${clientName}, ласкаво просимо в «${this.service}»`;
+// }
+
+// const steam = {
+//   service: "Steam",
+// };
+// const steamGreeter = greet.bind(steam);
+// console.log(steamGreeter("Манго"));
+
+// const gmail = {
+//   service: "Gmail",
+// };
+// const gmailGreeter = greet.bind(gmail);
+// console.log(gmailGreeter("Полі"));
+
+// function greetGuest(greeting) {
+//   console.log(`${greeting}, ${this.username}`);
+// }
+
+// const mango = {
+//   username: "Манго",
+// };
+
+// const poly = {
+//   username: "Полі",
+// };
+
+// greetGuest.call(mango, "Ласкаво просимо");
+// greetGuest(mango, "Ласкаво просимо");
+
+// greetGuest.call(poly, "З прибуттям");
+// greetGuest(poly, "З прибуттям");
+
+// const customer = {
+//   firstName: "Jacob",
+//   secondName: "Mercer",
+//   getFullName() {
+//     return `${this.firstName} ${this.secondName}`;
+//   },
+// };
+
+// function makeMessage(callback) {
+//   console.log(`Обробляємо заявку від ${callback()}`);
+// }
+
+// makeMessage(customer.getFullName.bind(customer));
+
 // class User {
 //   #email;
 
