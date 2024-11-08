@@ -1,12 +1,12 @@
-function checkStorage(available, ordered) {
-  if (ordered === 0) {
-    return "Your order is empty!";
-  } else if (ordered > available) {
-    return "Your order is too large, not enough goods in stock!";
-  }
-  return "The order is accepted, our manager will contact you";
-}
-console.log(checkStorage(100, 50));
+// function checkStorage(available, ordered) {
+//   if (ordered === 0) {
+//     return "Your order is empty!";
+//   } else if (ordered > available) {
+//     return "Your order is too large, not enough goods in stock!";
+//   }
+//   return "The order is accepted, our manager will contact you";
+// }
+// console.log(checkStorage(100, 50));
 // function getShippingCost(country) {
 //   let message;
 //   // Change code below this line
